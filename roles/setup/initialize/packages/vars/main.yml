@@ -5,5 +5,8 @@ PACKAGES: [
   "tmux",
   "tree",
   "flatpak",
-  "xclip"
+  "xclip",
+  "gparted",
+  "btop",
+  "gnome-clocks"
 ]

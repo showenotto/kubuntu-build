@@ -1,5 +1,5 @@
 ---
-  - name: Installing konsave from pip...
+  - name: 
     pip:
       name: konsave
       state: present
@@ -12,4 +12,3 @@
         konsave -a kde-desktop
     become: true
     become_user: showen
-
