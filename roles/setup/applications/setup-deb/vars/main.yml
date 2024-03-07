@@ -1,0 +1,5 @@
+---
+PACKAGES : [
+  "docker.io",
+  "docker-compose"
+]

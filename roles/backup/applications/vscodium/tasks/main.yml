@@ -1,0 +1,10 @@
+---
+  - name: Backing up vscodium...
+    #User Settings
+    shell: 'tar -C /home/showen/.config/VSCodium -cJvf /home/showen/neon-build/roles/setup/applications/vscodium/files/vscodium.tar.xz User/'
+  - name: Backing up vscodium extensions...
+    #Extensions
+    copy:
+      src: /home/showen/.vscode-oss/extensions/extensions.json
+      dest: /home/showen/neon-build/roles/setup/applications/vscodium/files/extensions.json
+

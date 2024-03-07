@@ -1,0 +1,3 @@
+---
+  - name: Backing up wireshark...
+    shell: 'tar -C /home/showen/.config/ -cJvf /home/showen/neon-build/roles/setup/applications/wireshark/files/wireshark.tar.xz wireshark/'

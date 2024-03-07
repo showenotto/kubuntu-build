@@ -1,0 +1,7 @@
+---
+  - name: Configuring vim...
+    copy:
+        src: /home/showen/neon-build/roles/setup/configurations/vim/files/.vimrc
+        dest: /home/showen/.vimrc
+    become: true
+

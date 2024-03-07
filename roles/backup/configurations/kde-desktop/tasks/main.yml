@@ -1,0 +1,12 @@
+---
+  - name: Backing up kde-desktop configuration...
+    shell: |
+      rm -rf /home/showen/neon-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
+      konsave -r kde-desktop
+      konsave -s kde-desktop
+      konsave -e kde-desktop -d /home/showen/neon-build/roles/setup/configurations/kde-desktop/files/
+      sudo chown -R showen:showen /home/showen/.config/
+
+      
+#Backup command      
+#shell: tar --exclude='*mozilla*' --exclude='*cherrytree*' --exclude='*powershell*' --exclude='*dconf*' --exclude='*app*' -C /home/showen/.config/ -cvJf "{{ BASE_DIR }}/roles/configurations/kde-desktop/files/kde-configurations.tar.xz" .

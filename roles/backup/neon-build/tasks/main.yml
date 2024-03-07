@@ -1,0 +1,17 @@
+---
+  - name: Backing up 'neon-build' to USB...
+    shell: rm -rf /media/backup/KDE-Neon/neon-build/*
+  - name:
+    copy:
+      src: /home/showen/neon-build/ 
+      dest: /media/backup/KDE-Neon/neon-build/
+
+  - name: Backing up 'neon-build' to GitHub...
+    git_config:
+      name: user.email
+      value: "showen@proton.me"
+      scope: global
+  - name: 
+    shell: "git add . && git commit -m '1.0' && git push"
+    args:
+      chdir: /home/showen/neon-build/

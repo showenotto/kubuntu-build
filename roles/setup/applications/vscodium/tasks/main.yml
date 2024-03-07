@@ -1,0 +1,16 @@
+---
+  - name: Configuring vscodium...
+    #User settings
+    shell: rm -rf /home/showen/.config/VSCodium/User/
+  - name: 
+    unarchive:
+      src: /home/showen/neon-build/roles/setup/applications/vscodium/files/vscodium.tar.xz
+      dest: /home/showen/.config/VSCodium/
+
+    #Extensions
+  - name: Configuring vscodium extensions...
+    shell: rm /home/showen/.vscode-oss/extensions/extensions.json 
+  - name:
+    copy:
+      src: /home/showen/neon-build/roles/setup/applications/vscodium/files/extensions.json
+      dest: /home/showen/.vscode-oss/extensions/extensions.json

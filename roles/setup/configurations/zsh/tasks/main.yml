@@ -1,0 +1,15 @@
+---
+  - name: Setting zsh as the default shell...
+    command:
+      cmd: chsh -s /bin/zsh showen
+    become: true
+
+  - name: Configuring zsh...
+    copy:
+      src: /home/showen/neon-build/roles/setup/configurations/zsh/files/.zshrc
+      dest: /home/showen/.zshrc
+      owner: showen
+      group: showen
+      mode: '0644'
+    become: true
+

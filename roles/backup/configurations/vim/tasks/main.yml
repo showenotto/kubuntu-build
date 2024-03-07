@@ -1,0 +1,5 @@
+---
+  - name: Backing up vim configuraton...
+    copy:
+      src: /home/showen/.vimrc
+      dest: /home/showen/neon-build/roles/setup/configurations/vim/files/

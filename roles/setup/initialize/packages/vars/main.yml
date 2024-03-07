@@ -1,0 +1,9 @@
+---
+PACKAGES: [ 
+  "zsh",
+  "vim",
+  "tmux",
+  "tree",
+  "flatpak",
+  "xclip"
+]

@@ -1,0 +1,5 @@
+---
+  - name: Backing up tmux configuration...
+    copy:
+      src: /etc/tmux.conf
+      dest: /home/showen/neon-build/roles/setup/configurations/tmux/files/
