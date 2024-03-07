@@ -12,7 +12,6 @@ source /home/showen/neon-build/roles/setup/configurations/zsh/files/style_and_fu
 
 #^Aliases
 source /home/showen/neon-build/roles/setup/configurations/zsh/files/aliases/misc.sh
-source /home/showen/neon-build/roles/setup/configurations/zsh/files/aliases/tmux.sh
 source /home/showen/neon-build/roles/setup/configurations/zsh/files/aliases/showen.sh
 #$Aliases
 
@@ -38,8 +37,7 @@ setopt share_history
 #$History configs
 
 #^Functions
-source '/home/showen/neon-build/roles/setup/configurations/zsh/files/functions/tmux-timer.sh'
 source '/home/showen/neon-build/roles/setup/configurations/zsh/files/functions/stop-ports.sh'
 #$Functions
-
+cat /etc/motd
 [[ "$TMUX" = "" ]] && tmux

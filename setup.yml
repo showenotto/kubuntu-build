@@ -3,7 +3,7 @@
     hosts: localhost
     roles:
       #Initializations
-      - roles/setup/initialize/packages
+      #- roles/setup/initialize/packages
       #Configurations
       - roles/setup/configurations/kde-desktop
       - roles/setup/configurations/sudo
@@ -12,8 +12,8 @@
       - roles/setup/configurations/vim
       - roles/setup/configurations/zsh
       #Applications
-      - roles/setup/applications/wireshark
+      #- roles/setup/applications/wireshark
       - roles/setup/applications/vscodium
-      - roles/setup/applications/setup-deb
+        #- roles/setup/applications/setup-deb
       #- roles/applications/setup-flatpaks 
 
