@@ -3,5 +3,6 @@ PACKAGES : [
   "docker.io",
   "docker-compose",
   "wireshark",
-  "libreoffice"
+  "libreoffice",
+  "virtualbox"
 ]

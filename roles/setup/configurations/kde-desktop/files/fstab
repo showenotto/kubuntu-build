@@ -4,9 +4,10 @@ UUID=48B485E7B485D838   /media/showen/Games     ntfs    defaults        0       
 #Extended Storage
 UUID=0916c27a-0d34-480d-b957-37615df04dd2       /home/showen/es/        ext4    defaults,noauto 0       0
 
-#SSD Backup
-UUID=039430dc-e656-44fd-b9d1-20c30ad85c6f       /media/backup/ssd       ext4    defaults,noauto 0       0
-
 #USB Backup
 UUID=c8ef141e-3190-4c6c-bad7-c7c0d3539b31       /media/backup/usb       ext4    defaults,noauto 0       0
+
+#SSD Backup
+UUID=039430dc-e656-44fd-b9d1-20c30ad85c6f       /media/backup/ssd       ext4    defaults	0       0
+
 
