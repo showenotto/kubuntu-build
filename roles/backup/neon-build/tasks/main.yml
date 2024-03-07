@@ -1,10 +1,10 @@
 ---
   - name: Backing up 'neon-build' to USB...
-    shell: rm -rf /media/backup/KDE-Neon/neon-build/*
+    shell: rm -rf /media/backup/usb/KDE-Neon/neon-build/*
   - name:
     copy:
       src: /home/showen/neon-build/ 
-      dest: /media/backup/KDE-Neon/neon-build/
+      dest: /media/backup/usb/KDE-Neon/neon-build/
 
   - name: Backing up 'neon-build' to GitHub...
     git_config:
