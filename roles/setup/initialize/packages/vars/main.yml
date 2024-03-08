@@ -8,5 +8,6 @@ PACKAGES: [
   "xclip",
   "gparted",
   "btop",
-  "gnome-clocks"
+  "gnome-clocks",
+  "kalk"
 ]
