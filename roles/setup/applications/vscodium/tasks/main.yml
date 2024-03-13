@@ -9,7 +9,7 @@
 
     #Extensions
   - name: Configuring vscodium extensions...
-    shell: rm /home/showen/.vscode-oss/extensions/extensions.json 
+    shell: cat /home/showen/neon-build/roles/setup/applications/vscodium/files/extension.txt | xargs -L 1 codium --install-extension 
   - name:
     copy:
       src: /home/showen/neon-build/roles/setup/applications/vscodium/files/extensions.json
