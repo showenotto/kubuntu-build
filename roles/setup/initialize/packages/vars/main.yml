@@ -9,5 +9,6 @@ PACKAGES: [
   "gparted",
   "btop",
   "gnome-clocks",
-  "kalk"
+  "kalk",
+  "imagemagick"
 ]
