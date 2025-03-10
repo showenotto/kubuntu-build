@@ -1,6 +1,6 @@
 ---
   - name: Configuring tmux...
     copy:
-      src: /home/showen/neon-build/roles/setup/configurations/tmux/files/tmux.conf
+      src: /home/showen/kubuntu-build/roles/setup/configurations/tmux/files/tmux.conf
       dest: /etc/tmux.conf
     become: true

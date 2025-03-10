@@ -2,5 +2,5 @@
   - name: Backing up sudo configuration...
     copy:
       src: /etc/sudoers
-      dest: /home/showen/neon-build/roles/setup/configurations/kde-desktop/files/sudoers
+      dest: /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/sudoers
 

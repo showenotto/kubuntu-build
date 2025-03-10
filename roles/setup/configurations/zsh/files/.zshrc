@@ -1,18 +1,18 @@
 #Prompt
-source '/home/showen/neon-build/roles/setup/configurations/zsh/files/prompt.sh'
+source '/home/showen/kubuntu-build/roles/setup/configurations/zsh/files/prompt.sh'
 #$Prompt
 
 #^Key binds
-source /home/showen/neon-build/roles/setup/configurations/zsh/files/keybinds.sh
+source /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/keybinds.sh
 #$Key binds##
 
 #^Styles, customzation and functionality
-source /home/showen/neon-build/roles/setup/configurations/zsh/files/style_and_functionality.sh
+source /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/style_and_functionality.sh
 #$Styles, customization and functionality
 
 #^Aliases
-source /home/showen/neon-build/roles/setup/configurations/zsh/files/aliases/misc.sh
-source /home/showen/neon-build/roles/setup/configurations/zsh/files/aliases/showen.sh
+source /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/aliases/misc.sh
+source /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/aliases/showen.sh
 #$Aliases
 
 #LS_COLORS
@@ -37,7 +37,7 @@ setopt share_history
 #$History configs
 
 #^Functions
-source '/home/showen/neon-build/roles/setup/configurations/zsh/files/functions/stop-ports.sh'
+source '/home/showen/kubuntu-build/roles/setup/configurations/zsh/files/functions/stop-ports.sh'
 #$Functions
 cat /etc/motd
 [[ "$TMUX" = "" ]] && tmux

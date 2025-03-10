@@ -10,5 +10,6 @@ PACKAGES: [
   "btop",
   "gnome-clocks",
   "kalk",
-  "imagemagick"
+  "imagemagick",
+  "texlive"
 ]

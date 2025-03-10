@@ -6,7 +6,7 @@
 
   - name: Configuring zsh...
     copy:
-      src: /home/showen/neon-build/roles/setup/configurations/zsh/files/.zshrc
+      src: /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/.zshrc
       dest: /home/showen/.zshrc
       owner: showen
       group: showen

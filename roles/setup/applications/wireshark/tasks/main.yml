@@ -3,5 +3,5 @@
     shell: rm -rf /home/showen/.config/wireshark/
   - name: 
     unarchive:
-      src: /home/showen/neon-build/roles/setup/applications/wireshark/files/wireshark.tar.xz
+      src: /home/showen/kubuntu-build/roles/setup/applications/wireshark/files/wireshark.tar.xz
       dest: /home/showen/.config/

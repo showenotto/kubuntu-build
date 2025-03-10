@@ -2,4 +2,4 @@
   - name: Backing up zsh configuraton...
     copy:
       src: /home/showen/.zshrc
-      dest: /home/showen/neon-build/roles/setup/configurations/zsh/files/
+      dest: /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/
