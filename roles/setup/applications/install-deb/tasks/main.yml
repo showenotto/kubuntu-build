@@ -1,0 +1,6 @@
+---
+- name: Installing Applications [DEB]...
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+  loop: "{{ PACKAGES }}"

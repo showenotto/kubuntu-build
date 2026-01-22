@@ -1,0 +1,10 @@
+---
+# tasks file for zed
+- name: Configuring wireshark...
+  file:
+    path: "/home/showen/.var/app/{{APP_ID}}/config/zed/"
+    state: absent
+- name:
+  unarchive:
+    src: /home/showen/kubuntu-build/roles/setup/applications/zed/files/zed.tar.xz
+    dest: "/home/showen/.var/app/{{APP_ID}}/config/"

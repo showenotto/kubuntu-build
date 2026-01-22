@@ -1,17 +1,14 @@
 ---
-  - name: Backing up Kubuntu...
-    hosts: localhost
-    roles:
-      #Configurations
-      - roles/backup/configurations/kde-desktop
-      - roles/backup/configurations/tmux
-      - roles/backup/configurations/zsh
-      - roles/backup/configurations/vim
-      - roles/backup/configurations/sudo
-      #Applications
-      - roles/backup/applications/wireshark
-      - roles/backup/applications/vscodium
-      #Kubuntu Build
-      #- roles/backup/kubuntu-build
-      #become: true
-
+- name: Backing up Kubuntu...
+  hosts: localhost
+  roles:
+    #Configurations
+    - roles/backup/configurations/kde-desktop
+    - roles/backup/configurations/tmux
+    - roles/backup/configurations/zsh
+    - roles/backup/configurations/vim
+    #Applications
+    - roles/backup/applications/zed
+    - roles/backup/applications/wireshark
+    #Kubuntu Build
+    - roles/backup/kubuntu-build

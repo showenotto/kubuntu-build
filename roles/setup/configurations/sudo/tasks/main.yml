@@ -1,6 +1,0 @@
-- name: Configuring sudo...
-  copy:
-    src: /home/showen/kubuntu-build/roles/setup/configurations/sudo/files/sudoers
-    dest: /etc/sudoers
-    mode: '0440'
-  become: true
