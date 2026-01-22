@@ -2,9 +2,9 @@
   - name: Backing up kde-desktop configuration...
     shell: |
       rm -rf /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
-      konsave -r kde-desktop
-      konsave -s kde-desktop
-      konsave -e kde-desktop -d /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/
+      #konsave -r kde-desktop
+      ~/.local/bin/konsave -s kde-desktop
+      ~/.local/bin/konsave -e kde-desktop -d /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/
       sudo chown -R showen:showen /home/showen/.config/
 
       

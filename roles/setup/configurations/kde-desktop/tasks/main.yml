@@ -1,14 +1,14 @@
 ---
-  - name: 
-    pip:
-      name: konsave
-      state: present
-    become: true
+#- name: 
+#    pip:
+#      name: konsave
+#      state: present
+#    become: true
 
   - name: Configuring kde-desktop... 
     shell: |
-        konsave -r kde-desktop
-        konsave -i /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
-        konsave -a kde-desktop
+        ~/.local/bin/konsave -r kde-desktop
+        ~/.local/bin/konsave -i /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
+        ~/.local/bin/konsave -a kde-desktop
     become: true
     become_user: showen

@@ -1,6 +1,8 @@
-Pivotal.vscode-boot-dev-pack
+ms-python.debugpy
+ms-python.python
 redhat.java
 vmware.vscode-spring-boot
+vscjava.vscode-gradle
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
 vscjava.vscode-java-pack

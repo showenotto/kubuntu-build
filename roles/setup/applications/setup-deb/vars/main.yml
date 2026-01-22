@@ -4,5 +4,4 @@ PACKAGES : [
   "docker-compose",
   "wireshark",
   "libreoffice",
-  "virtualbox"
 ]

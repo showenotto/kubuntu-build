@@ -9,4 +9,4 @@
 
     #Extensions
   - name: Configuring vscodium extensions...
-    shell: cat /home/showen/kubuntu-build/roles/setup/applications/vscodium/files/extension.txt | xargs -L 1 codium --no-sandbox --user-data-dir /home/showen/ --install-extension
+    shell: cat /home/showen/kubuntu-build/roles/setup/applications/vscodium/files/extension.txt | xargs -L 1 codium --no-sandbox --user-data-dir /home/showen/.config/VSCodium --install-extension

@@ -1,5 +1,11 @@
 ---
-FLATPAKS : [
-  "com.brave.Browser"
-]
-
+FLATPAKS:
+  [
+    "org.kde.filelight",
+    "com.github.tchx84.Flatseal",
+    "com.brave.Browser",
+    "dev.zed.Zed",
+    "com.discordapp.Discord",
+    "org.wireshark.Wireshark",
+    "org.libreoffice.LibreOffice",
+  ]
