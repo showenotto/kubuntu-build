@@ -5,3 +5,8 @@
       pkg: "{{ item }}"
       state: latest
     loop: "{{ PACKAGES }}"  
+  
+  - name: Installing konsave...
+    become: yes
+    become_user: "{{ansible_env.USER}}"
+    command: pipx install konsave
