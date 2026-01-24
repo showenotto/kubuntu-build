@@ -8,7 +8,7 @@
   - name: Configuring kde-desktop... 
     shell: |
         ~/.local/bin/konsave -r kde-desktop
-        ~/.local/bin/konsave -i /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
+        ~/.local/bin/konsave -i "{{ target_home_dir }}/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv"
         ~/.local/bin/konsave -a kde-desktop
     become: true
     become_user: showen

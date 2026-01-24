@@ -1,6 +1,6 @@
 ---
   - name: Configuring tmux...
     copy:
-      src: /home/showen/kubuntu-build/roles/setup/configurations/tmux/files/tmux.conf
+      src: "{{target_home_dir}}/kubuntu-build/roles/setup/configurations/tmux/files/tmux.conf"
       dest: /etc/tmux.conf
     become: true

@@ -1,14 +1,14 @@
 ---
 - name: Configuring wireshark...
   file:
-    path: "/home/showen/.var/app/{{APP_ID}}/config/wireshark/"
+    path: "{{target_home_dir}}/.var/app/{{APP_ID}}/config/wireshark/"
     state: absent
 
 - name:
   file:
-    path: "/home/showen/.var/app/{{APP_ID}}/config/wireshark/"
+    path: "{{target_home_dir}}/.var/app/{{APP_ID}}/config/wireshark/"
     state: directory
 - name:
   unarchive:
-    src: /home/showen/kubuntu-build/roles/setup/applications/wireshark/files/wireshark.tar.xz
-    dest: "/home/showen/.var/app/{{APP_ID}}/config/"
+    src: "{{target_home_dir}}/kubuntu-build/roles/setup/applications/wireshark/files/wireshark.tar.xz"
+    dest: "{{target_home_dir}}/.var/app/{{APP_ID}}/config/"

@@ -1,15 +1,15 @@
 ---
   - name: Setting zsh as the default shell...
     command:
-      cmd: chsh -s /bin/zsh showen
+      cmd: "chsh -s /bin/zsh {{target_user}}"
     become: true
 
   - name: Configuring zsh...
     copy:
-      src: /home/showen/kubuntu-build/roles/setup/configurations/zsh/files/.zshrc
-      dest: /home/showen/.zshrc
-      owner: showen
-      group: showen
+      src: "{{target_home_dir}}/kubuntu-build/roles/setup/configurations/zsh/files/.zshrc"
+      dest: "{{target_home_dir}}/.zshrc"
+      owner: "{{target_user}}"
+      group: "{{target_user}}"
       mode: '0644'
     become: true
 
