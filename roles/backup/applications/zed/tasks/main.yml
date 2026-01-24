@@ -2,10 +2,6 @@
 - name: Backing up zed...
   archive:
     path: "/.var/app/{{ APP_ID }}/config/zed"
-    dest: "/home/showen/kubunt-build/roles/backup/zed/files/zed.tar.xz"
+    dest: "{{target_home_dir}}/kubuntu-build/roles/backup/zed/files/zed.tar.xz"
     format: xz
-    excludes:
-      - "*.log"
-      - "tmp/*"
-      - "tmp"
   register: config_archive_result

@@ -1,5 +1,5 @@
 ---
-  - name: Backing up tmux configuration...
-    copy:
-      src: /etc/tmux.conf
-      dest: /home/showen/kubuntu-build/roles/setup/configurations/tmux/files/
+- name: Backing up tmux configuration...
+  copy:
+    src: /etc/tmux.conf
+    dest: "{{target_home_dir}}/kubuntu-build/roles/setup/configurations/tmux/files/"

@@ -1,13 +1,13 @@
 ---
-  - include_vars: vars/main.yml
-  - name: Initializing packages...
-    apt:
-      pkg: "{{ item }}"
-      state: latest
-    loop: "{{ PACKAGES }}"  
-  
-  - name: Installing konsave...
-    become: yes
-    become_user: showen
-    become_method: su
-    command: /usr/bin/pipx install konsave
+- include_vars: vars/main.yml
+- name: Initializing packages...
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+  loop: "{{ PACKAGES }}"
+
+- name: Installing konsave...
+  become: yes
+  become_user: "{{target_user}}"
+  become_method: su
+  command: /usr/bin/pipx install konsave

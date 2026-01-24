@@ -1,12 +1,9 @@
 ---
-  - name: Backing up kde-desktop configuration...
-    shell: |
-      rm -rf /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv
-      #konsave -r kde-desktop
-      ~/.local/bin/konsave -s kde-desktop
-      ~/.local/bin/konsave -e kde-desktop -d /home/showen/kubuntu-build/roles/setup/configurations/kde-desktop/files/
-      sudo chown -R showen:showen /home/showen/.config/
-
-      
-#Backup command      
-#shell: tar --exclude='*mozilla*' --exclude='*cherrytree*' --exclude='*powershell*' --exclude='*dconf*' --exclude='*app*' -C /home/showen/.config/ -cvJf "{{ BASE_DIR }}/roles/configurations/kde-desktop/files/kde-configurations.tar.xz" .
+- name: Backing up kde-desktop configuration...
+  become: true
+  become_user: "{{target_user}}"
+  become_method: su
+  shell: |
+    rm -rf "{{target_home_dir}}/kubuntu-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv"
+    ~/.local/bin/konsave -s kde-desktop --force
+    ~/.local/bin/konsave -e kde-desktop -d "{{target_home_dir}}/kubuntu-build/roles/setup/configurations/kde-desktop/files/"
