@@ -1,2 +1,2 @@
 ---
-PACKAGES: ["docker.io", "docker-compose"]
+APPLICATIONS: ["docker.io", "docker-compose", "wireshark"]

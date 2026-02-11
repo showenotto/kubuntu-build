@@ -10,4 +10,6 @@
   become: yes
   become_user: "{{target_user}}"
   become_method: su
-  command: /usr/bin/pipx install konsave
+  shell: |
+    /usr/bin/pipx uninstall konsave
+    /usr/bin/pipx install konsave

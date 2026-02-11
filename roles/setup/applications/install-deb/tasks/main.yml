@@ -3,4 +3,4 @@
   apt:
     pkg: "{{ item }}"
     state: latest
-  loop: "{{ PACKAGES }}"
+  loop: "{{ APPLICATIONS }}"

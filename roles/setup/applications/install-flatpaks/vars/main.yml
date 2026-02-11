@@ -6,5 +6,5 @@ FLATPAKS:
     "com.brave.Browser",
     "dev.zed.Zed",
     "com.discordapp.Discord",
-    "org.wireshark.Wireshark",
+    #"org.wireshark.Wireshark",
   ]
